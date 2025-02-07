@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+  } 
+  /* shared style */
+  main{
+    padding-bottom: 10px;
+  }
+  .display-flex{
+    display: flex;
+  }
+  .btn-orange{
+    border: none;
+    border-radius: 12px;
+     
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    gap: 10px;
+    width: 197px;
+    height: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .btn-black{
+    border: none;
+    border-radius: 12px;
+     
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    gap: 10px;
+    width: 197px;
+    height: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  /* shared colour */
+  .orange{
+    color: rgb(254, 163, 1);
+  }
+  .skyblue{
+    color: rgb(1, 172, 253);
+  }
+  .light-blue{
+    color: rgb(5, 212, 223);
+  }
+  .purple{
+    color: rgb(93, 88, 239);
+  }
+  /* navber styles */
+  .navber{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-item{
+      list-style:none ;
+      margin-right: 32px;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  .brand{
+    color:rgb(17, 17, 17) ;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .navber , .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .banner{
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   padding-left: 0px 141px;
+  }
+  .banner img{
+    width: 100%;
+  }
+  .banner-title{
+    font-size: 4.68rem;
+    font-weight: 700;
+  }
+  .banner-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  main > section {
+    margin-top: 60px;
+  }
+  /* curriculamn styles */
+  .standard-curriculamn-title{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 2.9rem;
+    font-weight: 700;
+  }
+  .standard-curriculamn-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 55px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .curriculamn-container{
+    background-image: linear-gradient(rgb(52, 170, 48), rgb(102, 153, 132), rgb(121, 153, 116), white);
+    border: none;
+    border-radius: 10px;
+  }
+  .btn {
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: red;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 25px;
+  margin: 30px;
+}
+
+.grid-container img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.grid-container div {
+  border-radius: 10px;
+  box-shadow: 0px 6px 60px 0px gray;
+}
+
+.img1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  object-fit: cover;
+}
+
+.stories {
+  text-align: center;
+}
+.btn-box {
+  font-weight: bold;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  top: -25px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(1, 172, 253, 1);
+  padding: 70px;
+  border: none;
+  color: white;
+  gap: 20px;
+}
+
+
+.list {
+  list-style: none;
+}
+
+.title {
+  display: flex;
+}
+
+.logo1 {
+  height: 100px;
+}
+Imon
+Imon Islam
+@media screen and (max-width: 576px) {
+
+  .school,
+  .list,
+  .btn-orange {
+
+      display: none;
+  }
+
+  .hide {
+      display: contents;
+  }
+
+  .banner {
+      flex-direction: column-reverse;
+      text-align: center;
+      margin: 20px 20px;
+  }
+
+  .banner-title {
+      font-size: 50px;
+  }
+
+  nav {
+      margin: 15px;
+      border: 2px solid orange;
+  }
+
+  .standard-curriculamn-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+      padding: 20px;
+      text-align: center;
+      width: 90%;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-box {
+      padding: 10px 15px;
+  }
+
+  .img1 {
+      display: none;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+}
